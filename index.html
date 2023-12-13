@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="banner">
+        <div id="banner-content">
+            <img src="images/cinnamoroll_studying.jpg" alt="Profile Image" class="circular-image">
+            <h1>Habit Tracker</h1>
+            <h3>by Cinnamoroll</h3>
+        </div>
+    </div>
+    <div id="main-container">
+        <div id="todo-list">
+            <h2>To-Do List <img src="images/notepad.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!--<li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -- -->
+            </ul>
+        </div>
+        <div id="calendar-container">
+            <div id="month-year">December 2023</div>
+            <div id="calendar"></div>
+        </div>
+        <div class="habit-container"></div>
+        <div class="overlay" id="habit-tracker-overlay"></div>
+        <div class="modal-container" aria-hidden="true" id="habit-tracker">
+            <div class="modal">
+                <h2>Add a new habit</h2>
+                <input type="text" id="title" placeholder="Enter a habit name">
+                <div class="icons">
+                    <button class="icon" id="hygiene">
+                        <img src="images/hygiene.jpg" alt="Hygiene Icon">
+                    </button>
+
+                    <button class="icon" id="productivity">
+                        <img src="images/productivity.jpg" alt="Productivity Icon">
+                    </button>
+
+                    <button class="icon" id="self-care">
+                        <img src="images/selfcare.jpg" alt="Self-Care Icon">
+                    </button>
+
+                    <button class="icon" id="exercise">
+                        <img src="images/exercise.jpg" alt="Exercise Icon">
+                    </button>
+
+                    <button class="icon" id="socialize">
+                        <img src="images/social.png" alt="Socialize Icon">
+                    </button>
+
+                    <button class="icon" id="sleep">
+                        <img src="images/sleep.jpg" alt="Sleep Icon">
+                    </button>
+                </div>
+                <div class="modal-btns">
+                    <button id="add">Add Habit</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="legend">
+        <!-- Add your legend content here -->
+    </div>
+    <div id="pie-chart">
+        <!-- Add your pie chart content here -->
+    </div>
+    </div>
+    <script src="calendar.js"></script>
+    <script src="todo.js"></script>
+    <script src="calendar_popup.js"></script>
+</body>
+
+</html>
